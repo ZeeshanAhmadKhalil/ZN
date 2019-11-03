@@ -1,0 +1,1 @@
+Accounts = require('web3-eth-accounts') // write "npm run build" in cmd after making change to this file

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Main App</title>
+  </head>
+  <body>
+    <h5>
+      Welcome <b id="name_displayed"></b>
+      <br>
+      Balance:<b id="total_eth">0</b> Eth
+    </h5>
+    <h6>Enter the amount which you want to deposit</h6>
+    <input type="text" name="amount_to_deposit" id="amount_to_deposit">
+    <select name="unit" id="unit">
+      <option value="eth">eth</option>
+      <option value="finney">finney</option>
+      <option value="Gwei">Gwei</option>
+      <option value="wei">wei</option>
+    </select>
+    <br>
+    <button onclick="deposit_eth()">Deposit</button>
+    <script src="../js/web3.min.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

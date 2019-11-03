@@ -1,0 +1,20 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "just_a_comment": "-o means output file",
+  "scripts": {
+    "build": "browserify includings.js -o bundle.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^0.19.1",
+    "web3-eth-accounts": "^1.2.2"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.0"
+  }
+}
