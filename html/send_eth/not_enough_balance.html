@@ -1,21 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Main App</title>
-  </head>
-  <body>
-    <h5>
-      Welcome <b id="name_displayed"></b>
-      <br>
-      Balance:<b id="total_eth">0</b> Eth
-      <br>
-    </h5>
-    <h6>Sorry! you dont have sufficient balance</h6>
-    <a href="../index.html"><button>Ok</button></a>
-    <script src="../../js/web3.min.js"></script>
-    <script src="../../js/index.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/index.css">
+  <script src="https://kit.fontawesome.com/198435c505.js" crossorigin="anonymous"></script>
+  <title>Main App</title>
+</head>
+
+<body>
+  <div id="main_container">
+    <header>
+      <image src="../..\images\eth.gif" width="80px"><span id="top_title">Blockchain E-Wallet</span></image>
+    </header>
+    <div id="content">
+      <h5>
+        Welcome <b id="name_displayed"></b>
+        <br>
+        Balance:<b id="total_eth">0</b> Eth
+        <br>
+      </h5>
+      <h6>Sorry! you dont have sufficient balance</h6>
+      <a href="../index.html"><button>Ok</button></a>
+      <script src="../../js/web3.min.js"></script>
+      <script src="../../js/index.js"></script>
+    </div>
+  </div>
+</body>
+
 </html>

@@ -6,28 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://kit.fontawesome.com/198435c505.js" crossorigin="anonymous"></script>
     <title>Main App</title>
 </head>
 
 <body>
-    <div id="qrcode"></div>
+    <div id="main_container">
+        <header>
+            <image src="..\images\eth.gif" width="80px"><span id="top_title">Blockchain E-Wallet</span></image>
+        </header>
+        <div id="qrcode"></div>
 
-    <script type="text/javascript" src="../js/qrcode.js"></script>
-    <script>
-        function createQrCode() {
-            var current_email = sessionStorage.getItem("email")
-            console.log(current_email)
-            var qrcode = new QRCode("qrcode", {
-                text: current_email,
-                width: 256,
-                height: 256,
-                colorDark: "black",
-                colorLight: "white",
-                correctLevel: QRCode.CorrectLevel.H
-            });
-        }
-        createQrCode()
-    </script>
+        <script type="text/javascript" src="../js/qrcode.js"></script>
+        <script>
+            function createQrCode() {
+                var current_email = sessionStorage.getItem("email")
+                console.log(current_email)
+                var qrcode = new QRCode("qrcode", {
+                    text: current_email,
+                    width: 256,
+                    height: 256,
+                    colorDark: "black",
+                    colorLight: "white",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            }
+            createQrCode()
+        </script>
+    </div>
 </body>
+
+
 
 </html>

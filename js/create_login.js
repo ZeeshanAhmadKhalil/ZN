@@ -1,4 +1,4 @@
-test_rpc='HTTP://192.168.1.7:7545'
+test_rpc='HTTP://172.0.1.212:7545'
 var accounts=new Accounts(test_rpc)
 var is_created;
 if(typeof(web3)!=='undefined'){

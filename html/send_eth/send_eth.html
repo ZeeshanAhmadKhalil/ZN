@@ -1,31 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Main App</title>
-  </head>
-  <body>
-    <h5>
-      Welcome <b id="name_displayed"></b>
-      <br>
-      Balance:<b id="total_eth">0</b> Eth
-      <br>
-      Sending to:<b id="reciever_name"></b>
-    </h5>
-    <h6>Enter the Amount you want to send from Balance</h6>
-    <input required type="number" name="amount_to_send" id="amount_to_send">
-    <select name="unit" id="unit">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../css/index.css">
+  <script src="https://kit.fontawesome.com/198435c505.js" crossorigin="anonymous"></script>
+  <title>Main App</title>
+</head>
+
+<body>
+  <div id="main_container">
+    <header>
+      <image src="../..\images\eth.gif" width="80px"><span id="top_title">Blockchain E-Wallet</span></image>
+    </header>
+    <div id="content">
+      <h5>
+        Welcome <b id="name_displayed"></b>
+        <br>
+        Balance:<b id="total_eth">0</b> Eth
+        <br>
+        Sending to:<b id="reciever_name"></b>
+      </h5>
+      <h6>Enter the Amount you want to send from Balance</h6>
+      <input required type="number" name="amount_to_send" id="amount_to_send">
+      <select name="unit" id="unit">
         <option value="eth">eth</option>
         <option value="finney">finney</option>
         <option value="Gwei">Gwei</option>
         <option value="wei">wei</option>
       </select>
-    <br>
-    <button onclick="enter_amount_to_send()">Next</button>
-    <a href="../index.html"><button>Cancel</button></a>
-    <script src="../../js/web3.min.js"></script>
-    <script src="../../js/index.js"></script>
-  </body>
+      <br>
+      <button onclick="enter_amount_to_send()">Next</button>
+      <a href="../index.html"><button>Cancel</button></a>
+      <script src="../../js/web3.min.js"></script>
+      <script src="../../js/index.js"></script>
+    </div>
+</body>
+
+
+
 </html>

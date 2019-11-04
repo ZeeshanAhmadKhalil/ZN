@@ -1,0 +1,53 @@
+#top_title {
+    font-weight: bold;
+}
+header{
+    background: #5F48E2;
+    /* text-align: left; */
+}
+#main_container{
+    background: rgb(169, 173, 192);
+    width:350px;
+    margin: 0 auto;
+    min-height: 600px;
+}
+#content h5{
+    background: rgb(65, 59, 59);
+    color:white;
+    padding: 10px;
+}
+#slide_show{
+    background: orange;
+    height: 180px;
+    margin-top: 0;
+    background: url('../images/ether.jpg') no-repeat fixed center;
+}
+.fas{
+    /* background: yellow; */
+    /* margin-left: 30%; */
+    margin-top: 10%;
+    font-size: 50px;
+    border-radius: 30px;
+    border-color: #5F48E2;
+    /* border- */
+}
+.button{
+    color: black;
+    /* background: rgb(151, 155, 175); */
+    width:33%;
+    height: 100px;
+    float: left;
+    text-align: center;
+    color: #5F48E2; 
+    /* display: inline-block; */
+    /* display:block;
+    float: left; */
+}
+.button-text{
+    font-size: 15px;
+    font-weight: bold;
+    /* background: white; */
+}
+a:hover{
+    text-decoration: none;
+}
